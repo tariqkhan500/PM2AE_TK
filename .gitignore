@@ -23,13 +23,23 @@
 !requirements*.txt
 !CMakeLists.txt
 !.gitignore
+!.gitattributes
+
+# Include model checkpoints (stored through Git LFS)
+!*.pt
+!*.pth
+!*.ckpt
 
 # Always exclude generated folders and local settings
 **/__pycache__/
 **/.ipynb_checkpoints/
 Output/
 **/results/
-training_runs/
+training_runs/*
+!training_runs/**/
+!training_runs/**/*.pt
+!training_runs/**/*.pth
+!training_runs/**/*.ckpt
 .aws/
 .codex/
 .env*
