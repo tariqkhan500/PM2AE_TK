@@ -1,0 +1,36 @@
+
+# Ignore everything by default
+*
+
+# Allow Git to inspect subfolders
+!*/
+
+# Include code and notebooks
+!*.py
+!*.ipynb
+!*.sh
+!*.cpp
+!*.h
+!*.cu
+!*.cuh
+
+# Include configuration and dependency files
+!*.yaml
+!*.yml
+!*.toml
+!*.cfg
+!*.ini
+!requirements*.txt
+!CMakeLists.txt
+!.gitignore
+
+# Always exclude generated folders and local settings
+**/__pycache__/
+**/.ipynb_checkpoints/
+Output/
+**/results/
+training_runs/
+.aws/
+.codex/
+.env*
+
